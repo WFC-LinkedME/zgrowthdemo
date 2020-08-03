@@ -2,6 +2,7 @@ package cc.linkedme.linkaccountdemo;
 
 import android.app.Activity;
 import android.content.Context;
+import android.support.v4.content.ContextCompat;
 import android.util.DisplayMetrics;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,7 +13,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import cc.lkme.linkaccount.AuthUIConfig;
-import cc.lkme.linkaccount.v4.content.ContextCompat;
 
 public class LinkAccountAuthUIUtil {
 

@@ -50,7 +50,7 @@ dependencies {
     implementation "com.android.support:gridlayout-v7:${supportVersion}"
     implementation "com.android.support:design:${supportVersion}"
     implementation "com.android.support:support-v4:${supportVersion}"
-    implementation files("libs/linkcommcon-sdk-v2.0.0.1.jar")
+    implementation files("libs/linkcommon-sdk-v2.0.0.1.jar")
     implementation files("libs/linkpage-sdk-v2.0.0.1.jar")
     // 友盟分享
     implementation 'com.umeng.sdk:common:1.5.0'

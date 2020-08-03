@@ -6,8 +6,6 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
-import com.microquation.linkedme.android.LinkedME;
-
 /**
  * Created by LinkedME06 on 16/8/14.
  */

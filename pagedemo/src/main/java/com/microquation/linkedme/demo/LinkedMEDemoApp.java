@@ -11,6 +11,8 @@ import com.microquation.linkedme.android.LinkedME;
 import com.umeng.commonsdk.UMConfigure;
 import com.umeng.socialize.PlatformConfig;
 
+import cc.lkme.common.LinkGrowth;
+
 /**
  * <p>在自定义的Application的onCreate()方法中调用以下方法</p>
  *
@@ -48,13 +50,16 @@ public class LinkedMEDemoApp extends Application {
         instance = this;
         // 初始化SDK
         long currentTime = System.currentTimeMillis();
-        LinkedME.getInstance(this, "7e289a2484f4368dbafbd1e5c7d06903");
+        LinkGrowth.getInstance(this, "7e289a2484f4368dbafbd1e5c7d06903");
         System.out.println("耗时====" + (System.currentTimeMillis() - currentTime));
 
         if (BuildConfig.DEBUG) {
             //设置debug模式下打印LinkedME日志
-            LinkedME.getInstance().setDebug();
+            LinkGrowth.getInstance().setDebug();
         }
+        // 设置用户协议授权状态，如果不设置，默认true，如果设置为false，则在用户同意后设置为true，否则不发送任何请求
+        // demo此处设置为true
+        LinkGrowth.getInstance().setPrivacyStatus(true);
 
         // 设置是否开启自动跳转指定页面，默认为true
         // 若在此处设置为false，请务必在配置Uri scheme的Activity页面的onResume()方法中，

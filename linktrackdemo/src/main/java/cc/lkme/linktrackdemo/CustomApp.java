@@ -18,6 +18,8 @@ public class CustomApp extends Application {
             //设置debug模式下打印LinkedME日志
             LinkGrowth.getInstance().setDebug();
         }
+        // 设置用户协议授权状态，如果不设置，默认true，如果设置为false，则在用户同意后设置为true，否则不发送任何请求
+        // demo此处设置为true
         LinkGrowth.getInstance().setPrivacyStatus(true);
         JSONObject commonProperties = new JSONObject();
         try {
